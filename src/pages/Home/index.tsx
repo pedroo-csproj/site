@@ -2,7 +2,7 @@ import React from "react";
 
 import ProfileImage from "../../assets/profile.jpg";
 import { EmailImage, GithubImage, LinkedInImage, TwitterImage } from "../../assets/";
-import { AboutMe, Contact, Description } from "./style";
+import { AboutMe, Contact, Description, Button } from "./style";
 
 export const Home: React.FC = () => {
     return (
@@ -35,6 +35,9 @@ export const Home: React.FC = () => {
                 <ContactLink socialUrl="https://www.linkedin.com/in/pedro-octavio/" imageSource={LinkedInImage} imageTitle="linkedin" imageAlt="pedroo_csproj linkedin link" />
                 <ContactLink socialUrl="https://twitter.com/pedroo_csproj" imageSource={TwitterImage} imageTitle="twitter" imageAlt="pedroo_csproj twitter link" />
             </Contact>
+            <Button>
+                <a href="https://github.com/pedroo-csproj/Curriculum/raw/main/Curriculum-Pedro-Oct%C3%A1vio-english.pdf" download>Download my Curriculum</a>
+            </Button>
         </div>
     );
 };

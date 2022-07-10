@@ -30,3 +30,21 @@ export const Contact = styled.div`
         margin: 0px 15px 0px 15px;
     }
 `;
+
+export const Button = styled.div`
+margin-top: 60px !important;
+
+    a {
+        color:#f5f5f5;
+        text-decoration: none;
+        background-color: #333333;
+        padding: 10px 10%;
+        font-size: 18px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+        transition: all 0.2s ease-in-out;
+        background-color:#555555;
+    }
+`;
