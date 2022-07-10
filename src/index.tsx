@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
 import App from './App';
@@ -19,11 +19,11 @@ const Layout = styled.body`
 
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Layout>
         <App />
       </Layout>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
