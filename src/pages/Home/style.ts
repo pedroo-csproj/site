@@ -27,7 +27,6 @@ export const AboutMe = styled.div`
 `;
 
 export const Description = styled.div`
-    margin-top: 40px;
 
     p {
         margin: 0 auto;
@@ -42,8 +41,7 @@ export const Description = styled.div`
 
     @media (min-width: 600px) {
         p {
-            text-align: justify;
-            max-width: 70%;
+            width: 500px;
             font-size: 16px;
         }
     }
