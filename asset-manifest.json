@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.946ecd12.js",
+    "main.js": "/static/js/main.988eba45.js",
     "static/js/787.dd4029b4.chunk.js": "/static/js/787.dd4029b4.chunk.js",
+    "static/media/besto-waifu.jpg": "/static/media/besto-waifu.87b4467810834938e8ba.jpg",
     "static/media/profile.jpg": "/static/media/profile.57cbea00babdb30806df.jpg",
+    "static/media/not-found.jpg": "/static/media/not-found.704831cb13ace90eb8b1.jpg",
     "index.html": "/index.html",
-    "main.946ecd12.js.map": "/static/js/main.946ecd12.js.map",
+    "main.988eba45.js.map": "/static/js/main.988eba45.js.map",
     "787.dd4029b4.chunk.js.map": "/static/js/787.dd4029b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.946ecd12.js"
+    "static/js/main.988eba45.js"
   ]
 }
