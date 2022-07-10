@@ -11,6 +11,7 @@ const root = ReactDOM.createRoot(
 );
 
 const Layout = styled.body`
+  margin-top: 40px;
   font-family: 'Lato', sans-serif;
   font-family: 'Roboto', sans-serif;
   text-align: center;
