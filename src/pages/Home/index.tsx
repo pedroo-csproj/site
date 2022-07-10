@@ -1,7 +1,8 @@
 import React from "react";
 
 import ProfileImage from "../../assets/profile.jpg";
-import { AboutMe, Description } from "./style";
+import { EmailImage, GithubImage, LinkedInImage, TwitterImage } from "../../assets/";
+import { AboutMe, Contact, Description } from "./style";
 
 export const Home: React.FC = () => {
     return (
@@ -27,6 +28,28 @@ export const Home: React.FC = () => {
                     </p>
                 </Description>
             </AboutMe>
+            <Contact>
+                <h1>Get in touch!</h1>
+                <ContactLink socialUrl="mailto:pedrooctavio.dev@outlook.com" imageSource={EmailImage} imageTitle="email" imageAlt="pedroo_csproj email link" />
+                <ContactLink socialUrl="https://github.com/pedroo-csproj" imageSource={GithubImage} imageTitle="github" imageAlt="pedroo_csproj github link" />
+                <ContactLink socialUrl="https://www.linkedin.com/in/pedro-octavio/" imageSource={LinkedInImage} imageTitle="linkedin" imageAlt="pedroo_csproj linkedin link" />
+                <ContactLink socialUrl="https://twitter.com/pedroo_csproj" imageSource={TwitterImage} imageTitle="twitter" imageAlt="pedroo_csproj twitter link" />
+            </Contact>
         </div>
+    );
+};
+
+interface IContactLinkProps {
+    socialUrl: string;
+    imageSource: string;
+    imageTitle: string;
+    imageAlt: string;
+};
+
+const ContactLink: React.FC<IContactLinkProps> = ({ socialUrl, imageSource, imageTitle, imageAlt }) => {
+    return (
+        <a href={socialUrl} target="_blank" rel="noreferrer">
+            <img src={imageSource} title={imageTitle} alt={imageAlt} />
+        </a>
     );
 };

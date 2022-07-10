@@ -22,3 +22,11 @@ export const Description = styled.div`
         font-size: 16px;
     }
 `;
+
+export const Contact = styled.div`
+    margin-top: 70px;
+
+    a {
+        margin: 0px 15px 0px 15px;
+    }
+`;
