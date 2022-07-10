@@ -53,36 +53,40 @@ export const Contact = styled.div`
     margin-top: 70px;
 
     a {
-        margin: 0px 15px 0px 15px;
+        margin: 15px;
     }
 `;
 
 export const Button = styled.div`
-margin-top: 60px !important;
+margin-top: 60px;
 
-    a {
+    button{
+        cursor: pointer;   
+        border:none;
+        background: #333333;
         color:#f5f5f5;
-        text-decoration: none;
-        background-color: #333333;
-        transition: all 0.2s ease-in-out;
+        font-size: 18px;
     }
 
-    a:hover {
+    button:hover{
         transition: all 0.2s ease-in-out;
         background-color:#555555;
     }
 
     @media (max-width: 600px) {
-        a {
-            padding: 25px 25%;
-            font-size: 18px;
+        button{
+            padding: 15px 0px;
+
+            width: 100%;
+            transition: 0.5s;
         }
     }
 
     @media (min-width: 600px) {
-        a {
-            padding: 15px 10%;
-        font-size: 18px;
+        button{
+            padding: 10px 0px;
+            width: 350px;
+            transition: 0.5s;
         }
     }
 `;

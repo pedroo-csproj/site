@@ -36,7 +36,9 @@ export const Home: React.FC = () => {
                 <ContactLink socialUrl="https://twitter.com/pedroo_csproj" imageSource={TwitterImage} imageTitle="twitter" imageAlt="pedroo_csproj twitter link" />
             </Contact>
             <Button>
-                <a href="https://github.com/pedroo-csproj/Curriculum/raw/main/Curriculum-Pedro-Oct%C3%A1vio-english.pdf" download>Download my Curriculum</a>
+                <a href="https://github.com/pedroo-csproj/Curriculum/raw/main/Curriculum-Pedro-Oct%C3%A1vio-english.pdf" download>
+                    <button>Download my Curriculum</button>
+                </a>
             </Button>
         </div>
     );
