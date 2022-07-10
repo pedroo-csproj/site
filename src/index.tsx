@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
 import App from './App';
@@ -11,18 +11,18 @@ const root = ReactDOM.createRoot(
 );
 
 const Layout = styled.body`
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;
-text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 `;
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <App />
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
